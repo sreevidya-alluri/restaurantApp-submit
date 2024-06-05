@@ -1,0 +1,70 @@
+/* index.css */
+
+.home-background {
+  background-color: #f8f9fa;
+  padding: 20px;
+}
+
+.tab-container {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin-top: 20px;
+  padding-left: 0;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.each-tab-item {
+  margin-right: 15px;
+}
+
+.tab-category-button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: #495057;
+  cursor: pointer;
+  padding: 10px 15px;
+  padding-right:70 px;
+  border-radius: 4px;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+}
+
+.tab-category-button:hover {
+  background-color: #e9ecef;
+}
+
+.active-tab-item .tab-category-button {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.dishes-list-container {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.spinner-border {
+  width: 3rem;
+  height: 3rem;
+}
+
+@media (max-width: 576px) {
+  .tab-container {
+    flex-direction: column;
+  }
+
+  .each-tab-item {
+    margin-bottom: 10px;
+  }
+}
